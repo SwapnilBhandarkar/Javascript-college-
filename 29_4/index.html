@@ -7,6 +7,8 @@
 </head>
 <body>
     <p id="demo"></p>
+    <button  onclick="getDate()">Click me </button>
+    <p id="date"></p>
 </body>
 <script>
     // const user={"name":"abc","age":28,"course":["FSD-1","DE","FSD-2"],"address":["t1","t2",{"t3":"try again"}]}
@@ -18,5 +20,16 @@
 
     console.log(sub.FSD[0].content.tags)
     console.log(sub.FSD[1].contact[0])
+
+    // write one jason string with date (yyyy-mm-dd) and print date in india
+    function getDate(){
+        // var date=new Date("2024-04-30")
+        var text={"DOS":"2024-04-30"}
+        var date=new Date(text.DOS)
+        console.log(date)
+
+        document.getElementById("date").innerHTML="Course will start on "+date
+    }
+     
 </script>
 </html>
