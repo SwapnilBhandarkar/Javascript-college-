@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+</body>
+<script>
+    // const user={"name":"abc","age":28,"course":["FSD-1","DE","FSD-2"],"address":["t1","t2",{"t3":"try again"}]}
+    // console.log(user.name);
+    // console.log(JSON.stringify(user.address[2]));
+    // console.log(user.address[2].t3);
+
+    const sub={"FSD":[{"topic":"html","course":"beginer","content":{"tags":"table","form":"xyz"}},{"topic":"css","course":"beginer","contact":["tags","table","form"]}]}
+
+    console.log(sub.FSD[0].content.tags)
+    console.log(sub.FSD[1].contact[0])
+</script>
+</html>
