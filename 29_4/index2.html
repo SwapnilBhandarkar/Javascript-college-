@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var user='{"hello":"hii"}'
+        // const u={"school":"sngv","class":"12B"}
+        // var obj=JSON.parse(user)
+        // var obj1=JSON.stringify(u)
+        // console.log(obj)
+        // console.log(obj1)
+
+
+        // write a function transformFirstAndLast that takes in an array and returns and object with 1) the first element of array as objets key and 2) the last element of array as object value
+        // arr=["abc","def","pqr"]
+
+        // function transformFirstAndLast(arr){
+        //     var obj={}
+        //     obj[arr[0]]=arr[arr.length-1]
+        //     return obj
+        // }
+        // console.log(transformFirstAndLast(arr))
+
+
+        // write a js codeto store an array of objects having height and name display name and height of person with height
+
+        function getHeight(){
+            const user=[{"name":"abc","age":21},{"name":"pqr","age":41},{"name":"xyz","age":11}]
+            var max=user[0].age;
+            for (i=0;i<user.length;i++){
+                if(user[i].age>max){
+                    max=user[i].age
+                }
+            }
+            var x=JSON.parse(user)
+            console.log(max+","+x.name)
+
+        }
+        getHeight()
+        
+
+    </script>
+
+    
+</body>
+</html>
