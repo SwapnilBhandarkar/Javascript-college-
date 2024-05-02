@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+       1) write a script to define two json objects named as div1 and div2 having array to store names of students this names should be sorted alphabetically and should be returned on console
+
+
+     -->
+     <!-- 
+        2) JSON object contains 3 array objects each object contains two property name and height now sort an array values by height in descending order. print name and age on console as per sorted height
+
+
+
+      -->
+</body>
+<script>
+    
+// 1) ans
+    // const class1={"div1":{"name":["B","A","D"]},"div2":{"name":["Z","Y","C"]}};
+    // var d1=class1.div1.name;
+    // var d2=class1.div2.name;
+    // combined_data=d1.concat(d2).sort();
+    // console.log(combined_data);
+
+//  2) ans
+    const obj1=[{"name":"ABC","height":5.7},{"name":"XYZ","height":6.0},{"name":"DEV","height":5.5}];
+    // var x=obj1[0].height;
+
+    
+    for(i=0;i<obj1.length;i++){
+        for(j=0;j<obj1.length;j++){
+            if(obj1[i].height>obj1[j].height){
+                var temp;
+                temp=obj1[i];
+                obj1[i]=obj1[j];
+                obj1[j]=temp
+            }
+        }
+    }
+
+    for(i=0;i<obj1.length;i++){
+        console.log(obj1[i].name+ " , "+obj1[i].height)
+    }
+    
+
+</script>
+</html>
