@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- display hello with increasing font size in interval 15 sec in blue color  -->
+
+    <p id="demo" style=" color: blue;">Hello</p>
+</body>
+<script>
+    function display(new_size){
+        if(new_size<51){
+            document.getElementById("demo").style.fontSize=new_size+"px";
+    console.log("hello")
+    
+        }
+    }
+    size=10;
+ setInterval(function()  {
+    size+=5;
+    display(size)
+ }, 1000);
+</script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- initialize two variables and increment both the variables each time and display the addition both variables at interval of 1 sec -->
+<p id="demo"></p>
+    <script>
+        function display(sum){
+            document.getElementById('demo').innerHTML=sum;
+        }
+        var a=0;
+        var b=0;
+        function increment(a,b,mycallback){
+           
+           
+            mycallback(a+b);
+        }
+        setInterval(() => {
+            increment(++a,++b,display(a+b))
+        },1000);
+
+    </script>
+    
+</body>
+</html>

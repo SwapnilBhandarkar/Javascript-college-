@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+</body>
+<script>
+    const mydisplay=(sum)=>{
+        document.getElementById("demo").innerHTML=sum;
+    }
+        function clac(a,b,mycallback){
+            sum=a+b;
+            mycallback(sum);
+        }
+        clac(5,5,mydisplay);
+    
+</script>
+<!-- initialize two variables and increment both the variables each time and display the addition both variables at interval of 1 sec -->
+</html>
